@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Rais Dirja Rahmadi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 45px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 1.5s infinite;
+  }
+</style>
+
+<body class="bg-gray-100 text-gray-800">
+    
+  <aside id="mobileSidebar" class="fixed top-0 left-0 h-full w-16 bg-gray-900 text-white z-40 transition-all duration-300 ease-in-out">
+    <button id="closeSidebar" class="absolute top-4 right-4 bg-gray-700 text-white p-2 rounded">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="text-2xl font-bold mt-6 text-center hidden" id="sidebarTitle">IsNotSepuh</div>
+    <nav class="mt-10 space-y-2 hidden" id="sidebarMenu">
+      <a href="#home" class="block px-4 py-2 hover:bg-gray-700 rounded"><i class="fas fa-home"></i> Beranda</a>
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-700 rounded"><i class="fas fa-user"></i> Tentang</a>
+      <a href="#skills" class="block px-4 py-2 hover:bg-gray-700 rounded"><i class="fas fa-chart-bar"></i> Keahlian</a>
+      <a href="#experience" class="block px-4 py-2 hover:bg-gray-700 rounded"><i class="fas fa-briefcase"></i> Pengalaman</a>
+      <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-700 rounded"><i class="fas fa-images"></i> My Project/Work</a>
+    </nav>
+  </aside>
+
+  <button id="menuToggle" class="fixed top-4 left-4 bg-gray-900 text-white p-2 rounded lg:hidden z-50">
+    <i class="fas fa-bars"></i>
+  </button>
+
+ <button id="menuToggle" class="fixed top-4 left-4 bg-gray-900 text-white p-2 rounded lg:hidden z-50">
+      <i class="fas fa-bars"></i>
+  </button>
+
+ <main class="lg:ml-64 p-8 space-y-16">
+    <section id="home" class="text-center bg-gradient-to-r from-blue-500 to-purple-500 text-white p-16 rounded-lg shadow-lg">
+      <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+      <p class="mt-4 text-lg">I am Rais Dirja Rahmadi, a passionate Full-stack Developer and Designer.
+      <br>As a railfan, I enjoy capturing and photographing the fascinating moments of passing trains. Through this hobby, I have honed my skills in photography and videography.</p><a href="#portfolio" class="mt-6 inline-block bg-white text-gray-900 px-6 py-3 rounded shadow hover:bg-gray-200">
+        <i class="fas fa-arrow-right"></i> View My Work
+      </a>
+    </section>
+
+   <section id="about" class="bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold border-b pb-2">About Me</h2>
+      <p class="mt-4">
+        Hello! I’m Rais Dirja Rahmadi, a web developer skilled in frontend and backend technologies and i developer of bot WhatsApp. I specialize in
+        building user-friendly and dynamic websites and bot.
+      </p>
+      <ul class="mt-6 space-y-2">
+        <li class="flex items-center space-x-2"><i class="fas fa-code text-blue-500"></i> <span>Fullstack Development</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-palette text-purple-500"></i> <span>UI/UX Design</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-database text-green-500"></i> <span>Backend Systems</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-camera text-black-500"></i> <span>Fotografi/Videografi</span></li> 
+    </ul>
+    </section>
+
+
+<section id="skills" class="bg-white p-8 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold border-b pb-2">My Skills</h2>
+    <div class="space-y-4 mt-6">
+
+      <div class="flex items-center space-x-3">
+        <i class="fab fa-js-square text-yellow-500 text-2xl"></i>
+        <span>JavaScript</span>
+        <div class="bg-gray-200 h-3 rounded overflow-hidden mt-1 w-full">
+          <div class="bg-blue-500 h-3 w-9/10"></div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <i class="fab fa-python text-green-500 text-2xl"></i>
+        <span>Python</span>
+        <div class="bg-gray-200 h-3 rounded overflow-hidden mt-1 w-full">
+          <div class="bg-green-500 h-3 w-2/5"></div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <i class="fab fa-php text-blue-600 text-2xl"></i>
+        <span>PHP</span>
+        <div class="bg-gray-200 h-3 rounded overflow-hidden mt-1 w-full">
+          <div class="bg-yellow-500 h-3 w-3/5"></div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <i class="fas fa-camera text-yellow-500 text-2xl"></i>
+        <span>Fotografi</span>
+        <div class="bg-gray-200 h-3 rounded overflow-hidden mt-1 w-full">
+            <div class="bg-cyan-500 h-3 w-4/5"></div>
+        </div>
+    </div>
+    <div class="flex items-center space-x-3">
+        <i class="fas fa-video text-red-500 text-2xl"></i>
+        <span>Videografi</span>
+        <div class="bg-gray-200 h-3 rounded overflow-hidden mt-1 w-full">
+            <div class="bg-red-500 h-3 w-4/5"></div>
+        </div>
+    </div>
+  </section>
+  
+    <section id="experience" class="bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold border-b pb-2">Experience</h2>
+      <div class="mt-6 space-y-4">
+        <div>
+            <h3 class="text-lg font-bold">Freelance Designer <span class="text-gray-500">(2020 - 2022)</span></h3>
+            <p>Designing user interfaces and creating wireframes for clients.</p>
+          </div>
+        <div>
+          <h3 class="text-lg font-bold">Web Developer <span class="text-gray-500">(2022 - Present)</span></h3>
+          <p>Building dynamic web applications with modern technologies.</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-bold">WhatsApp Bot Developer (50% Experience) <span class="text-gray-500">(2023 - Present)</span></h3>
+            <p>I have experience developing WhatsApp bots with a focus on automation, user interaction, and system integrations. I use languages like JavaScript and Python for the bot development.</p>
+          </div>
+        
+      </div>
+    </section>
+
+
+    <section id="portfolio" class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold border-b pb-2">My Work</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+
+            <a href="https://dtiktok.glitch.me" data-lightbox="portfolio" data-title="DTikTok">
+                <img src="https://i.ibb.co.com/Pt8SvGC/20241126-204706.jpg" alt="DTikTok" class="rounded shadow hover:opacity-75 transition-opacity">
+            </a>
+
+            <a href="https://i.ibb.co.com/7G6HtnY/20241126-205036.jpg" data-lightbox="portfolio" data-title="Sc Spam">
+                <img src="https://i.ibb.co.com/7G6HtnY/20241126-205036.jpg" alt="Sc Spam" class="rounded shadow hover:opacity-75 transition-opacity">
+            </a>
+
+            <a href="https://wa.me/6285158163940?text=.menu" data-lightbox="portfolio" data-title="Bot Wa">
+                <img src="https://i.ibb.co.com/RDtLGyG/20241126-204631.jpg" alt="Bot Wa" class="rounded shadow hover:opacity-75 transition-opacity">
+            </a>
+
+            <a href="https://codescreet.glitch.me" data-lightbox="portfolio" data-title="Store">
+                <img src="https://i.ibb.co.com/gSJWW62/20241126-204808.jpg" alt="Store" class="rounded shadow hover:opacity-75 transition-opacity">
+            </a>
+        </div>
+        <h1 class="text-1xl font-bold text-center text-blue-700 mt-6">MASIH BANYAK LAGII</h1>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const sidebarTitle = document.getElementById('sidebarTitle');
+    const sidebarMenu = document.getElementById('sidebarMenu');
+    const showSidebar = document.createElement('button'); // Create the "showSidebar" button dynamically
+    showSidebar.id = 'showSidebar';
+    showSidebar.innerHTML = '<i class="fas fa-bars"></i>';
+    showSidebar.classList.add('fixed', 'top-4', 'left-4', 'bg-gray-900', 'text-white', 'p-2', 'rounded', 'z-50', 'lg:hidden');
+    document.body.appendChild(showSidebar);
+
+    // Show/Hide Sidebar
+    menuToggle.addEventListener('click', () => {
+     /* mobileSidebar.classList.toggle('w-64');
+      mobileSidebar.classList.toggle('w-16');*/
+      sidebarTitle.classList.toggle('hidden');
+      sidebarMenu.classList.toggle('hidden');
+      showSidebar.classList.add('hidden');
+    });
+
+    // Close Sidebar
+    closeSidebar.addEventListener('click', () => {
+     mobileSidebar.classList.add('hidden');
+      mobileSidebar.classList.remove('w-64');
+      sidebarTitle.classList.add('hidden');
+      sidebarMenu.classList.add('hidden');
+      showSidebar.classList.remove('hidden');
+    });
+
+    // Show Sidebar Again
+    showSidebar.addEventListener('click', () => {
+      mobileSidebar.classList.remove('hidden');
+      mobileSidebar.classList.toggle('w-64');
+      mobileSidebar.classList.toggle('w-16');
+      sidebarTitle.classList.toggle('hidden');
+      sidebarMenu.classList.toggle('hidden');
+      showSidebar.classList.add('hidden');
+    });
+  
+  </script>
+</body>
+</html>
